@@ -1,0 +1,450 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    min-height: 180vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(wallpaper.jpg);;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
+
+nav{
+    display: flex;
+    padding: 2% 0%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img{
+    width: 125px;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 1px 15px;
+    position: relative;
+}
+
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav-links ul li::after{
+
+    content: '';
+    width: 0%;
+    height: 5px;
+    background: lightseagreen;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+
+/*-----Description about the Kosgoda hatchery------*/
+.row{
+    max-width: 55%;
+    height: 88%;
+    align-items: center;
+}
+
+.col{
+    flex-basis: 50%;
+}
+.content-info h1{
+    color: white;
+    font-size: 500%;
+    animation-name: RGB ;
+    animation-duration: 2s;
+    animation-timing-function:linear;
+    animation-iteration-count: infinite;
+
+}
+@keyframes RGB{
+    0%{color: #0100ec;}
+    50%{color: #4d4dd3;}
+    100%{color: aqua;}
+}
+
+.content-info p{
+    color: #fff;
+    font-size: 21px;
+    line-height: 25px;
+    margin: 20px;
+}
+
+.fin img{
+    width: 40%;
+    float: right;
+    margin-top: -450px;
+    border-radius: 20px;
+    margin-right: 17px;
+  
+}
+
+/*-----Map------*/
+.container99{
+    color: #fff;
+    margin-left: 16%;
+    margin-top: 10%;
+    font-size: 180%;
+}
+
+iframe{
+    width: 50%;
+    height: 400px;
+    padding-left:1%;
+    border-radius: 20px; 
+    margin-left: 16%;
+   
+    
+    
+    
+}
+
+
+
+/*-----more information about the harchery------*/
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+    padding: 20px;
+    grid-gap: 40px;
+    margin-top: 5%;
+}
+.card{
+    background-color: #1c1b29;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0,0,0,0.18);
+    
+    
+}
+.container{
+    position: relative;
+    clip-path: polygon(0 0,100% 0, 100% 85%, 0 100%);
+}
+img{
+    width: 100%;
+    display: block;
+    border-radius: 20px 20px 0 0;
+}
+.container:after{
+    content: "";
+    height: 00%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 20px 20px 0 0;
+    opacity: 0.7;
+}
+
+.details{
+    padding: 20px 10px;
+}
+.details>h3{
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 18px;
+    margin: 10px 0 15px 0;
+}
+.details>p{
+    color: #a0a0a0;
+    font-size: 15px;
+    line-height: 30px;
+    font-weight: 400;
+}
+
+/* The footer is fixed to the bottom of the page */
+
+
+
+
+.footer-distributed {
+    background-color: #2d2a30;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: bold 16px sans-serif;
+    padding: 50px 50px 60px 50px;
+    margin-top: 80px;
+}
+
+.footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left {
+    width: 30%;
+}
+
+.footer-distributed h3 {
+    color: #ffffff;
+    font: normal 36px 'Cookie', cursive;
+    margin: 0;
+}
+
+
+
+
+/* Footer links */
+
+.footer-distributed .footer-links {
+    color: #ffffff;
+    margin: 20px 0 12px;
+}
+
+.footer-distributed .footer-links a {
+    display: inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer-distributed .footer-company-name {
+    color: #8f9296;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center {
+    width: 35%;
+}
+
+.footer-distributed .footer-center i {
+    background-color: #33383b;
+    color: #ffffff;
+    font-size: 25px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    margin: 10px 15px;
+    vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope {
+    font-size: 17px;
+    line-height: 38px;
+}
+
+.footer-distributed .footer-center p {
+    display: inline-block;
+    color: #ffffff;
+    vertical-align: middle;
+    margin: 0;
+}
+
+.footer-distributed .footer-center p span {
+    display: block;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 2;
+}
+
+.footer-distributed .footer-center p a {
+    color: #e0ac1c;
+    text-decoration: none;
+    ;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right {
+    width: 30%;
+}
+
+.footer-distributed .footer-company-about {
+    line-height: 20px;
+    color: #92999f;
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.footer-distributed .footer-company-about span {
+    display: block;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons {
+    margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background-color: #33383b;
+    border-radius: 2px;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+    margin-right: 3px;
+    margin-bottom: 5px;
+}
+
+.footer-distributed .footer-icons a:hover {
+    background-color: #3F71EA;
+}
+
+.footer-links a:hover {
+    color: #3F71EA;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+/*-----Responsive------*/
+
+
+@media(max-width:767px){
+    .content-info h1{
+        font-size: 220%;
+    }
+}
+
+
+@media(max-width:767px){
+    .fin img{
+        width: 54%;
+       
+        
+      
+    }
+}
+
+
+@media(max-width:767px){
+    .container{
+        font-size: 150%;
+    }
+}
+
+@media(max-width:767px){
+    iframe{
+        width: 80%;
+        margin-left: 2%;
+
+    }
+}
+
+@media(max-width:767px){
+    .hd2{
+        font-size: 120%;
+
+    }
+}
+
+
+
+@media(max-width:767px){
+    .card1 img{
+        width: 200%;
+        height: 200%;
+        
+    }
+}
+@media(max-width:767px){
+    .cons{
+        display: inline-block;
+
+    }
+}
+
+
+
+@media(max-width:700px){
+    .fin img{
+        margin-top: -600px;
+    }
+}
+@media(max-width:767px){
+    .nav-links ul li:hover::after{
+        width: 0%;
+
+    }
+}
+
+@media(max-width:767px){
+    .cards{
+        margin-left: -4%;
+    }
+}
+@media(max-width:767px){
+    .nav-links ul li{
+        display: flex;
+        margin-left: 5%;
+        
+
+    }
+}
+
+@media (max-width: 880px) {
+    .footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
+        display: block;
+        width: 100%;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    .footer-distributed .footer-center i {
+        margin-left: 0;
+    }
+}       
+
+@media (max-height:800px) {
+    footer {
+        position: static;
+    }
+    header {
+        padding-top: 40px;
+    }
+}
+        
